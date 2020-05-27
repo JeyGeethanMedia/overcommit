@@ -97,6 +97,7 @@ module Overcommit
       case status
       when :pass
         log.success 'OK' unless @config['quiet'] || hook.quiet?
+        print_report(output)
       when :warn
         log.warning 'WARNING'
         print_report(output, :bold_warning)

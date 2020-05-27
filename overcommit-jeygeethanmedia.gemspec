@@ -4,7 +4,7 @@ require_relative './lib/overcommit/constants'
 require_relative './lib/overcommit/version'
 
 Gem::Specification.new do |s|
-  s.name                  = 'overcommit'
+  s.name                  = 'overcommit-jeygeethanmedia'
   s.version               = Overcommit::VERSION
   s.license               = 'MIT'
   s.summary               = 'Git hook manager'
