@@ -85,7 +85,7 @@ module Overcommit::HookLoader
           result = @context.execute_hook(command)
 
           if result.success?
-            :pass
+            [:pass, result.stdout]
           else
             [:fail, result.stdout + result.stderr]
           end
